@@ -32,8 +32,10 @@ dependencies:
   dio: ^5.4.3+1
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.5
   flutter_screenutil: ^5.9.1
   fluttertoast: ^8.2.5
+  get_it: ^7.7.0
   shared_preferences: ^2.2.3
 
 dev_dependencies:
