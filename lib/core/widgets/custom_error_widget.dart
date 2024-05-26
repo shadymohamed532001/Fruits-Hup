@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruithup/core/themaing/app_colors.dart';
 
-
 class CustomErrorWidget extends StatelessWidget {
   const CustomErrorWidget({
     super.key,
@@ -40,7 +39,7 @@ class CustomErrorWidget extends StatelessWidget {
           ),
         ),
         if (error == 'No Internet Connection')
-          Text(
+          const Text(
             'Connect to the internet and try again.',
             // style: AppStyle.font12Blackmedium,
             textAlign: TextAlign.center,
@@ -52,7 +51,7 @@ class CustomErrorWidget extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 16.w),
           child: TextButton(
             onPressed: onPressed,
-            child: Text(
+            child: const Text(
               'Try Again',
               // style: AppStyle.font14Blacksemibold,
             ),
