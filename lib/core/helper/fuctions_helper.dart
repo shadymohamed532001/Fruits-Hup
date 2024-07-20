@@ -7,6 +7,8 @@ Future<Map<String, dynamic>> fetchDataFromLocalStorage() async {
   onBording = await LocalServices.getData(key: 'onbording');
   usertoken = await LocalServices.getData(key: 'token');
   log('UserToken : $usertoken');
+  log('IsonBordingSeen : $onBording');
+
   return {'onBording': onBording, 'token': usertoken};
 }
 //  void validateEmail(String val) {

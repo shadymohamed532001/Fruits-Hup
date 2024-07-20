@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruithup/core/themaing/app_colors.dart';
-
+import 'package:fruithup/core/themaing/app_styles.dart';
 
 class CustomBottom extends StatelessWidget {
   const CustomBottom({
@@ -36,7 +36,7 @@ class CustomBottom extends StatelessWidget {
           padding: const EdgeInsets.symmetric(
             vertical: 10,
           ),
-          backgroundColor: backgroundColor,
+          backgroundColor: backgroundColor ?? ColorManger.primaryColor,
           shape: StadiumBorder(
             side: BorderSide(
               color: borderColor ?? ColorManger.primaryColor,
@@ -51,7 +51,11 @@ class CustomBottom extends StatelessWidget {
               )
             : Text(
                 bottomtext,
-                style: textBottomStyle 
+                style: textBottomStyle ??
+                    AppStyle.font16Bold.copyWith(
+                      fontFamily: 'Cairo',
+                      color: ColorManger.whiteColor,
+                    ),
               ),
       ),
     );
