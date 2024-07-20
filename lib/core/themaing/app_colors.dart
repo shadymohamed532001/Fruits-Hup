@@ -1,9 +1,11 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ColorManger {
   static Color backGroundSplahColor =
       const Color(0xffE6CABC); // primary dark color
 
+  static Color darkyelloColor = const Color(0xffF4A91E);
   static const Color primaryColor = Color(0xff1B5E37); // primary dark color
 
   static const Color darkGreyColor = Color(0xff333333);
@@ -16,7 +18,7 @@ class ColorManger {
   static const Color scaffoldColor = Color(0xffFAFAFA);
   static const Color blackColor = Color(0xff1E1E1E);
   static const Color whiteColor = Color(0xffFFFFFF);
-  static const Color greyColor = Color.fromARGB(255, 172, 167, 163);
+  static const Color greyColor = Color(0xff4E5556);
   static const Color redColor = Color(0xFFBE2B21);
   static const Color yellowColor = Color(0xFfffc923);
   static const Color greyColorBackGround = Color(0xffE2E3E2);

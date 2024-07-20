@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fruithup/core/themaing/app_colors.dart';
+import 'package:fruithup/core/themaing/app_styles.dart';
 
 class CustomTextFormFiled extends StatelessWidget {
   const CustomTextFormFiled({
@@ -38,8 +39,7 @@ class CustomTextFormFiled extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16)
-          .copyWith(top: 12, bottom: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       child: TextFormField(
         onTapOutside: (event) {
           FocusManager.instance.primaryFocus?.unfocus();
@@ -59,11 +59,11 @@ class CustomTextFormFiled extends StatelessWidget {
               suffixIconColor: const Color.fromARGB(255, 101, 98, 98),
               prefixIcon: prefixIcon,
               filled: true,
-              fillColor: ColorManger.lightMoreGreyColor,
+              fillColor: const Color(0xffF9FAFA),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(16),
                 borderSide: const BorderSide(
-                  color: ColorManger.lightMoreGreyColor,
+                  color: Color(0xffF9FAFA),
                 ),
               ),
               focusedBorder: OutlineInputBorder(
@@ -73,13 +73,15 @@ class CustomTextFormFiled extends StatelessWidget {
                 ),
               ),
               errorBorder: buildOutlineInputBorder(
-                width: 2,
+                width: 1,
               ),
               focusedErrorBorder: buildOutlineInputBorder(
-                width: 2,
+                width: 1,
               ),
               hintText: hintText,
-              // hintStyle: AppStyle.font13LightGreyregular,
+              hintStyle: AppStyle.font13Bold.copyWith(
+                fontFamily: 'Cairo',
+              ),
             ),
       ),
     );
